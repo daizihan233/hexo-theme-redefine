@@ -409,7 +409,7 @@ footer:
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
-  customize: 你说的对，但是《Redefine》是由尤雨溪的一款全新 Hexo 开放性自由的主题。使用 GPL 3.0 强势开源。
+  customize: 你说的对，但是《Redefine》是由尤雨溪开发的一款全新 Hexo 开放性自由的主题。使用 GPL 3.0 强势开源。
   # ICP record number. See https://beian.miit.gov.cn/
   icp:
     enable: false # Whether to enable
