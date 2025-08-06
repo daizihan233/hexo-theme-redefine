@@ -11,13 +11,13 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: Theme Redefine
+  title: KuoHuBlog
   # Site subtitle
-  subtitle: Redefine Your Hexo Journey.
+  subtitle: 请输入文本
   # Author name
-  author: The Redefine Team
+  author: 括弧
   # Site URL
-  url: https://redefine.ohevan.com
+  url: https://khbit.cn
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: https://cravatar.cn/avatar/c0c67928420f1ca7567ad555aeb50ed6
   # Site logo
-  logo: 
+  logo: https://cravatar.cn/avatar/c0c67928420f1ca7567ad555aeb50ed6
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: https://cravatar.cn/avatar/c0c67928420f1ca7567ad555aeb50ed6
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -88,8 +88,8 @@ global:
   single_page: true
   # Whether to enable Preloader.
   preloader:
-    enable: false
-    custom_message: # Custom message. If empty, the site title will be displayed
+    enable: true
+    custom_message: "正在输入文本"  # Custom message. If empty, the site title will be displayed
   # Side tools settings
   side_tools:
     # Whether to enable gear rotation animation for settings button
@@ -131,16 +131,16 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: /images/wallhaven-wqery6-light.webp # light mode
-    dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    light: https://t.alcy.cc/fj # light mode
+    dark: https://t.alcy.cc/fj # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: KuoHuBlog
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ["请输入文本"] # subtitle text, array
     hitokoto:  # 一言配置
-      enable: false # Whether to enable hitokoto
-      show_author: false # Whether to show author
+      enable: true # Whether to enable hitokoto
+      show_author: true # Whether to show author
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
@@ -171,16 +171,14 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: false
+    enable: true
     # Social links style
     style: default # default, reverse, center
     # Social links
     links:
-      github:  # your GitHub URL
-      instagram: # your Instagram URL
-      zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
-      email:  # your email
+      github: https://github.com/daizihan233/ # your GitHub URL
+      zhihu: https://www.zhihu.com/people/khbit # your ZhiHu URL
+      email: kuohu233@qq.com # your email
       # ...... # you can add more
     # Social links with QRcode drawers
     qrs:
@@ -208,6 +206,14 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
+    Friends:
+      path: /links
+      icon: fa-regular fa-link
+    About:
+      icon: fa-regular fa-user
+      submenus:
+        Me: /about
+        Github: https://github.com/daizihan233
     # Archives: 
     #   path: /archives 
     #   icon: fa-regular fa-archive # can be empty
@@ -231,7 +237,7 @@ navbar:
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
   search:
     # Whether to enable
-    enable: false
+    enable: true
     # Preload search data when the page loads
     preload: true
 # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -352,7 +358,7 @@ comment:
   # Whether to enable comment
   enable: true
   # Comment system
-  system: waline # waline, gitalk, twikoo, giscus
+  system: giscus # waline, gitalk, twikoo, giscus
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -377,15 +383,15 @@ comment:
       region: # Twikoo region. can be empty
     # Giscus comment system. See https://giscus.app/
     giscus:
-      repo: # Github repository name e.g. EvanNotFound/hexo-theme-redefine
-      repo_id: # Github repository id
-      category: # Github discussion category
-      category_id: # Github discussion category id
+      repo: daizihan233/khbit.cn # Github repository name e.g. EvanNotFound/hexo-theme-redefine
+      repo_id: R_kgDOPZT9JQ # Github repository id
+      category: General # Github discussion category
+      category_id: DIC_kwDOPZT9Jc4Ct2dT # Github discussion category id
       mapping: pathname # Which value to use as the unique identifier for the page. e.g. pathname, url, title, og:title. DO NOT USE og:title WITH PJAX ENABLED since pjax will not update og:title when the page changes
       strict: 0 # Whether to enable strict mode. e.g. 0, 1
       reactions_enabled: 1 # Whether to enable reactions. e.g. 0, 1
       emit_metadata: 0 # Whether to emit metadata. e.g. 0, 1
-      lang: en # Giscus language. e.g. en, zh-CN, zh-TW
+      lang: zh-CN # Giscus language. e.g. en, zh-CN, zh-TW
       input_position: bottom # Place the comment box above/below the comments. e.g. top, bottom
       loading: lazy # Load the comments lazily
 # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -399,11 +405,11 @@ footer:
   # Icon in footer, write fontawesome icon code here
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2022/8/17 11:45:14
+  start: 2025/08/06 11:45:14
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
-  customize:
+  customize: 你说的对，但是《Redefine》是由尤雨溪的一款全新 Hexo 开放性自由的主题。使用 GPL 3.0 强势开源。
   # ICP record number. See https://beian.miit.gov.cn/
   icp:
     enable: false # Whether to enable
@@ -452,7 +458,7 @@ plugins:
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
-    enable: false # enable mermaid or not
+    enable: true # enable mermaid or not
     version: "11.4.1" # default v11.4.1
 # PLUGINS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -471,7 +477,7 @@ page_templates:
 # Docs: https://redefine-docs.ohevan.com/cdn
 cdn:
   # Whether to enable CDN
-  enable: false
+  enable: true
   # CDN Provider
   provider: npmmirror # npmmirror, zstatic, cdnjs, jsdelivr, unpkg, custom
   # Custom CDN URL
