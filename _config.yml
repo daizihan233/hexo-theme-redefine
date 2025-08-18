@@ -212,7 +212,7 @@ navbar:
     About:
       icon: fa-regular fa-user
       submenus:
-        Me: /about
+        本站: /about/the-site
         Github: https://github.com/daizihan233
     # Archives: 
     #   path: /archives 
